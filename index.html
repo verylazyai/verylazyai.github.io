@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VeryLazyAI - Free AI Tools, One Click Away</title>
+    <meta name="description" content="Discover the best free AI tools organized by category. No overwhelm, just simple access to powerful AI - one click away.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <div class="logo">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="40" height="40" rx="8" fill="url(#gradient)"/>
+                    <path d="M12 20L18 26L28 14" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    <defs>
+                        <linearGradient id="gradient" x1="0" y1="0" x2="40" y2="40">
+                            <stop offset="0%" stop-color="#667eea"/>
+                            <stop offset="100%" stop-color="#764ba2"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <span>VeryLazyAI</span>
+            </div>
+            
+            <h1 class="hero-title">
+                AI Tools Made Simple.<br>
+                <span class="gradient-text">One Click Away.</span>
+            </h1>
+            
+            <p class="hero-subtitle">
+                No overwhelm. No complexity. Just the best free AI tools, organized and ready to use.
+            </p>
+
+            <div class="search-container">
+                <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <path d="m21 21-4.35-4.35"></path>
+                </svg>
+                <input type="text" id="searchInput" placeholder="Search AI tools..." class="search-input">
+            </div>
+        </div>
+    </header>
+
+    <!-- Mission Statement -->
+    <section class="mission">
+        <div class="container">
+            <div class="mission-content">
+                <h2>Our Mission</h2>
+                <p>
+                    AI shouldn't be overwhelming. We curate the best free AI tools and make them accessible 
+                    in one place. Whether you're creating content, coding, designing, or exploring - 
+                    everything you need is just one click away.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category Filter -->
+    <section class="filters">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-category="all">All Tools</button>
+                <button class="filter-btn" data-category="writing">✍️ Writing</button>
+                <button class="filter-btn" data-category="image">🎨 Images</button>
+                <button class="filter-btn" data-category="video">🎬 Video</button>
+                <button class="filter-btn" data-category="code">💻 Code</button>
+                <button class="filter-btn" data-category="audio">🎵 Audio</button>
+                <button class="filter-btn" data-category="productivity">⚡ Productivity</button>
+                <button class="filter-btn" data-category="research">🔍 Research</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools Grid -->
+    <section class="tools-section">
+        <div class="container">
+            <div id="toolsGrid" class="tools-grid">
+                <!-- Tools will be dynamically inserted here -->
+            </div>
+            <div id="noResults" class="no-results" style="display: none;">
+                <p>No tools found. Try a different search or category.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Video Section -->
+    <section class="featured-video">
+        <div class="container">
+            <h2>Why VeryLazyAI?</h2>
+            <div class="video-wrapper">
+                <div class="video-placeholder">
+                    <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                        <circle cx="40" cy="40" r="40" fill="rgba(102, 126, 234, 0.1)"/>
+                        <path d="M32 26L56 40L32 54V26Z" fill="#667eea"/>
+                    </svg>
+                    <p>Watch how we're making AI accessible for everyone</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <svg width="32" height="32" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="40" height="40" rx="8" fill="url(#gradient2)"/>
+                            <path d="M12 20L18 26L28 14" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            <defs>
+                                <linearGradient id="gradient2" x1="0" y1="0" x2="40" y2="40">
+                                    <stop offset="0%" stop-color="#667eea"/>
+                                    <stop offset="100%" stop-color="#764ba2"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <span>VeryLazyAI</span>
+                    </div>
+                    <p>Making AI simple, accessible, and free.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Quick Links</h3>
+                        <a href="#tools">Browse Tools</a>
+                        <a href="#mission">Our Mission</a>
+                        <a href="#submit">Submit a Tool</a>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h3>Categories</h3>
+                        <a href="#writing">Writing</a>
+                        <a href="#image">Images</a>
+                        <a href="#code">Code</a>
+                        <a href="#productivity">Productivity</a>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h3>Community</h3>
+                        <a href="#">Twitter</a>
+                        <a href="#">Discord</a>
+                        <a href="#">GitHub</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 VeryLazyAI. All rights reserved.</p>
+                <p>Curated with 💜 for the AI community</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Tool Modal -->
+    <div id="toolModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
