@@ -6,7 +6,7 @@ const aiTools = [
         description: "Advanced AI chatbot for conversations, content creation, coding help, and problem-solving.",
         fullDescription: "ChatGPT is OpenAI's flagship conversational AI that can help with writing, brainstorming, coding, learning, and much more.",
         features: ["Natural conversations", "Content generation", "Code writing", "Learning assistance", "Multi-language"],
-        url: "https://chat.openai.com", videoUrl: "https://www.youtube.com/embed/JTxsNm9IdYU",
+        url: "https://chat.openai.com", videoUrl: "",
         badge: "Free", rank: 1
     },
     {
@@ -14,7 +14,7 @@ const aiTools = [
         description: "Anthropic's AI assistant with strong reasoning, coding abilities, and long context windows.",
         fullDescription: "Claude excels at complex reasoning, analysis, and coding tasks with extended context understanding.",
         features: ["Extended context", "Advanced reasoning", "Safe responses", "Code generation", "Document analysis"],
-        url: "https://claude.ai", videoUrl: "https://www.youtube.com/embed/Ml8T32zilsM",
+        url: "https://claude.ai", videoUrl: "",
         badge: "Free", rank: 2
     },
     {
@@ -22,7 +22,7 @@ const aiTools = [
         description: "Google's multimodal AI that understands text, images, audio, and video.",
         fullDescription: "Google's Gemini is a powerful multimodal AI for creative and analytical work.",
         features: ["Multimodal understanding", "Google integration", "Real-time info", "Image generation", "Code assistance"],
-        url: "https://gemini.google.com", videoUrl: "https://www.youtube.com/embed/UIZAiXYceBI",
+        url: "https://gemini.google.com", videoUrl: "",
         badge: "Free", rank: 3
     },
     {
@@ -151,7 +151,7 @@ const aiTools = [
         description: "AI art generator known for stunning artistic image creation.",
         fullDescription: "Midjourney creates incredibly artistic and detailed images via Discord.",
         features: ["Artistic generation", "Style presets", "Upscaling", "Variations", "Community gallery"],
-        url: "https://midjourney.com", videoUrl: "https://www.youtube.com/embed/6YJUv9Wxyh0",
+        url: "https://midjourney.com", videoUrl: "",
         badge: "Trial", rank: 1
     },
     {
@@ -159,7 +159,7 @@ const aiTools = [
         description: "Create stunning images from text with OpenAI's latest model.",
         fullDescription: "DALL-E 3 generates creative and realistic images with improved accuracy.",
         features: ["Text-to-image", "Style variations", "High-res outputs", "ChatGPT integration", "Multiple ratios"],
-        url: "https://openai.com/dall-e-3", videoUrl: "https://www.youtube.com/embed/qTgPSKKjfVg",
+        url: "https://openai.com/dall-e-3", videoUrl: ",
         badge: "Free", rank: 2
     },
     {
@@ -167,7 +167,7 @@ const aiTools = [
         description: "Open-source AI image generator with powerful customization.",
         fullDescription: "Stable Diffusion offers complete control and can run locally.",
         features: ["Open-source", "Local/online", "Multiple models", "Fine-tuning", "Active community"],
-        url: "https://stability.ai", videoUrl: "https://www.youtube.com/embed/DHaL56P6f5M",
+        url: "https://stability.ai", videoUrl: "",
         badge: "Free", rank: 3
     },
     {
@@ -282,7 +282,7 @@ const aiTools = [
         description: "Advanced AI video generation with text-to-video.",
         fullDescription: "Runway's Gen-2 offers cutting-edge AI video tools.",
         features: ["Text-to-video", "Image-to-video", "Motion tracking", "Green screen removal", "30+ tools"],
-        url: "https://runwayml.com", videoUrl: "https://www.youtube.com/embed/0m8CfFXlYT0",
+        url: "https://runwayml.com", videoUrl: "",
         badge: "Free", rank: 1
     },
     {
@@ -297,7 +297,7 @@ const aiTools = [
         description: "AI avatar videos with voice cloning for presentations.",
         fullDescription: "HeyGen creates professional videos with AI avatars.",
         features: ["AI avatars", "Voice cloning", "40+ languages", "Templates", "Easy editing"],
-        url: "https://heygen.com", videoUrl: "https://www.youtube.com/embed/MxSBDjc5fqw",
+        url: "https://heygen.com", videoUrl: "",
         badge: "Free", rank: 3
     },
     {
@@ -391,7 +391,7 @@ const aiTools = [
         description: "AI pair programmer with real-time code suggestions.",
         fullDescription: "GitHub Copilot helps you write code faster with AI suggestions.",
         features: ["Real-time suggestions", "Multiple languages", "Context-aware", "IDE integration", "Explanations"],
-        url: "https://github.com/features/copilot", videoUrl: "https://www.youtube.com/embed/Xt8o9QM9Rr0",
+        url: "https://github.com/features/copilot", videoUrl: "",
         badge: "Trial", rank: 1
     },
     {
@@ -399,7 +399,7 @@ const aiTools = [
         description: "AI-first code editor built for pair programming.",
         fullDescription: "Cursor is designed from scratch for AI pair programming.",
         features: ["AI-native editor", "Chat with codebase", "Inline suggestions", "Code understanding", "Multiple models"],
-        url: "https://cursor.sh", videoUrl: "https://www.youtube.com/embed/gqUQbjsYZLQ",
+        url: "https://cursor.sh", videoUrl: "",
         badge: "Free", rank: 2
     },
     {
@@ -514,7 +514,7 @@ const aiTools = [
         description: "Ultra-realistic AI voice generator with voice cloning.",
         fullDescription: "ElevenLabs creates incredibly realistic AI voices.",
         features: ["Realistic synthesis", "Voice cloning", "29+ languages", "Emotion control", "API"],
-        url: "https://elevenlabs.io", videoUrl: "https://www.youtube.com/embed/yzBeKGgApZg",
+        url: "https://elevenlabs.io", videoUrl: "",
         badge: "Free", rank: 1
     },
     {
@@ -751,7 +751,7 @@ const aiTools = [
         description: "AI-powered search engine with sourced answers and citations.",
         fullDescription: "Perplexity AI combines search with AI for accurate cited answers.",
         features: ["AI-powered search", "Source citations", "Follow-up questions", "Multiple sources", "Real-time info"],
-        url: "https://perplexity.ai", videoUrl: "https://www.youtube.com/embed/gT2N68P0zuQ",
+        url: "https://perplexity.ai", videoUrl: "",
         badge: "Free", rank: 1
     },
     {
