@@ -37,13 +37,25 @@
                 No overwhelm. No complexity. Just the best free AI tools, organized and ready to use.
             </p>
 
-            <div class="search-container">
+            <div class="hero-tabs">
+                <button class="hero-tab active" data-tab="browse">Browse Tools</button>
+                <button class="hero-tab" data-tab="search">AI Search</button>
+            </div>
+
+            <div class="search-container" id="aiSearchContainer" style="display: none;">
                 <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                     <circle cx="11" cy="11" r="8"></circle>
                     <path d="m21 21-4.35-4.35"></path>
                 </svg>
-                <input type="text" id="searchInput" placeholder="Search AI tools..." class="search-input">
+                <input type="text" id="aiSearchInput" placeholder="Ask AI to find tools for you... (e.g., 'I need to create images' or 'help me write code')" class="search-input">
+                <button id="aiSearchButton" class="ai-search-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"></path>
+                    </svg>
+                </button>
             </div>
+
+            <div id="aiSearchResults" class="ai-search-results"></div>
         </div>
     </header>
 
@@ -64,15 +76,20 @@
     <!-- Category Filter -->
     <section class="filters">
         <div class="container">
-            <div class="filter-buttons">
-                <button class="filter-btn active" data-category="all">All Tools</button>
-                <button class="filter-btn" data-category="writing">✍️ Writing</button>
-                <button class="filter-btn" data-category="image">🎨 Images</button>
-                <button class="filter-btn" data-category="video">🎬 Video</button>
-                <button class="filter-btn" data-category="code">💻 Code</button>
-                <button class="filter-btn" data-category="audio">🎵 Audio</button>
-                <button class="filter-btn" data-category="productivity">⚡ Productivity</button>
-                <button class="filter-btn" data-category="research">🔍 Research</button>
+            <div class="filter-header">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-category="all">All Tools</button>
+                    <button class="filter-btn" data-category="writing">✍️ Writing</button>
+                    <button class="filter-btn" data-category="image">🎨 Images</button>
+                    <button class="filter-btn" data-category="video">🎬 Video</button>
+                    <button class="filter-btn" data-category="code">💻 Code</button>
+                    <button class="filter-btn" data-category="audio">🎵 Audio</button>
+                    <button class="filter-btn" data-category="productivity">⚡ Productivity</button>
+                    <button class="filter-btn" data-category="research">🔍 Research</button>
+                </div>
+                <div class="quick-search">
+                    <input type="text" id="quickSearchInput" placeholder="Quick search..." class="quick-search-input">
+                </div>
             </div>
         </div>
     </section>
