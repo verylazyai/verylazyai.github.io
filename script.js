@@ -882,6 +882,7 @@ const categoryKeywords = {
 // State
 let currentCategory = 'all';
 let searchTerm = '';
+let compareList = [];
 
 // Initialize
 document.addEventListener('DOMContentLoaded', () => {
@@ -900,12 +901,18 @@ function setupEventListeners() {
             const tabType = e.target.dataset.tab;
             const aiSearchContainer = document.getElementById('aiSearchContainer');
             const aiSearchResults = document.getElementById('aiSearchResults');
+            const comparisonPanel = document.getElementById('comparisonPanel');
+            
+            // Hide all panels first
+            aiSearchContainer.style.display = 'none';
+            aiSearchResults.style.display = 'none';
+            comparisonPanel.style.display = 'none';
             
             if (tabType === 'search') {
                 aiSearchContainer.style.display = 'block';
-            } else {
-                aiSearchContainer.style.display = 'none';
-                aiSearchResults.style.display = 'none';
+            } else if (tabType === 'compare') {
+                comparisonPanel.style.display = 'block';
+                renderComparison();
             }
         });
     });
@@ -1086,9 +1093,12 @@ function renderTools() {
     // Render tool cards
     toolsGrid.innerHTML = filteredTools.map(tool => {
         const rankBadge = tool.rank ? `<div class="rank-badge rank-${tool.rank}">#${tool.rank}</div>` : '';
+        const isInCompare = compareList.includes(tool.id);
+        const compareCheckbox = `<div class="tool-compare-checkbox ${isInCompare ? 'checked' : ''}" data-tool-id="${tool.id}" onclick="event.stopPropagation(); toggleCompare(${tool.id})"></div>`;
         
         return `
         <div class="tool-card" data-id="${tool.id}">
+            ${compareCheckbox}
             ${rankBadge}
             <div class="tool-header">
                 <div class="tool-icon">${tool.icon}</div>
@@ -1171,3 +1181,161 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+
+// ============================================
+// COMPARISON FEATURE
+// ============================================
+
+// Toggle tool in comparison
+function toggleCompare(toolId) {
+    const index = compareList.indexOf(toolId);
+    
+    if (index > -1) {
+        // Remove from compare
+        compareList.splice(index, 1);
+    } else {
+        // Add to compare (max 3)
+        if (compareList.length >= 3) {
+            alert('You can compare up to 3 tools at a time. Remove one to add another.');
+            return;
+        }
+        compareList.push(toolId);
+    }
+    
+    updateCompareCount();
+    renderTools(); // Re-render to update checkboxes
+}
+
+// Update compare count badge
+function updateCompareCount() {
+    const countBadge = document.getElementById('compareCount');
+    if (compareList.length > 0) {
+        countBadge.textContent = compareList.length;
+        countBadge.style.display = 'inline-flex';
+    } else {
+        countBadge.style.display = 'none';
+    }
+}
+
+// Render comparison panel
+function renderComparison() {
+    const selectedToolsContainer = document.getElementById('selectedToolsForCompare');
+    const comparisonTableContainer = document.getElementById('comparisonTable');
+    
+    if (compareList.length === 0) {
+        selectedToolsContainer.innerHTML = '';
+        comparisonTableContainer.innerHTML = `
+            <div class="empty-compare-state">
+                <h4>No tools selected for comparison</h4>
+                <p>Go back to Browse Tools and click the checkboxes on tool cards to add them here.</p>
+                <button onclick="switchToBrowse()" class="compare-cta-btn">
+                    Browse AI Tools →
+                </button>
+            </div>
+        `;
+        return;
+    }
+    
+    const compareTools = compareList.map(id => aiTools.find(t => t.id === id)).filter(Boolean);
+    
+    // Render selected tools chips
+    selectedToolsContainer.innerHTML = compareTools.map(tool => `
+        <div class="compare-tool-chip">
+            <span class="compare-tool-icon">${tool.icon}</span>
+            <span class="compare-tool-name">${tool.name}</span>
+            <button class="remove-compare-btn" onclick="toggleCompare(${tool.id}); renderComparison();">×</button>
+        </div>
+    `).join('');
+    
+    // Render comparison table
+    comparisonTableContainer.innerHTML = `
+        <table class="comparison-table">
+            <thead>
+                <tr>
+                    <th style="width: 200px;">Feature</th>
+                    ${compareTools.map(tool => `
+                        <th>
+                            <div class="tool-compare-header">
+                                <span class="tool-compare-icon">${tool.icon}</span>
+                                <span class="tool-compare-name">${tool.name}</span>
+                                <span class="tool-compare-category">${tool.category}</span>
+                            </div>
+                        </th>
+                    `).join('')}
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="feature-row-label">Category</td>
+                    ${compareTools.map(tool => `
+                        <td>
+                            <span class="tool-category">${tool.category}</span>
+                        </td>
+                    `).join('')}
+                </tr>
+                <tr>
+                    <td class="feature-row-label">Pricing</td>
+                    ${compareTools.map(tool => `
+                        <td>
+                            <span class="tool-badge ${tool.badge === 'Free' ? 'badge-free' : ''}">${tool.badge}</span>
+                        </td>
+                    `).join('')}
+                </tr>
+                <tr>
+                    <td class="feature-row-label">Top Ranked</td>
+                    ${compareTools.map(tool => `
+                        <td>
+                            ${tool.rank ? `<span class="rank-badge rank-${tool.rank}" style="position: relative; top: 0; right: 0;">#${tool.rank}</span>` : '—'}
+                        </td>
+                    `).join('')}
+                </tr>
+                <tr>
+                    <td class="feature-row-label">Description</td>
+                    ${compareTools.map(tool => `
+                        <td style="font-size: 13px; line-height: 1.5;">${tool.description}</td>
+                    `).join('')}
+                </tr>
+                <tr>
+                    <td class="feature-row-label">Key Features</td>
+                    ${compareTools.map(tool => `
+                        <td>
+                            <ul style="margin: 0; padding-left: 20px; font-size: 13px;">
+                                ${tool.features.slice(0, 3).map(f => `<li style="margin: 4px 0;">${f}</li>`).join('')}
+                            </ul>
+                        </td>
+                    `).join('')}
+                </tr>
+                <tr>
+                    <td class="feature-row-label">Video Tutorial</td>
+                    ${compareTools.map(tool => `
+                        <td>
+                            <span class="feature-value">
+                                ${tool.videoUrl ? '<span class="feature-check">✓</span> Available' : '<span class="feature-cross">✗</span> Not available'}
+                            </span>
+                        </td>
+                    `).join('')}
+                </tr>
+                <tr>
+                    <td class="feature-row-label">Action</td>
+                    ${compareTools.map(tool => `
+                        <td>
+                            <a href="${tool.url}" target="_blank" rel="noopener" class="compare-cta-btn">
+                                Try ${tool.name} →
+                            </a>
+                        </td>
+                    `).join('')}
+                </tr>
+            </tbody>
+        </table>
+    `;
+}
+
+// Switch back to browse tab
+function switchToBrowse() {
+    document.querySelectorAll('.hero-tab').forEach(t => t.classList.remove('active'));
+    document.querySelector('[data-tab="browse"]').classList.add('active');
+    document.getElementById('comparisonPanel').style.display = 'none';
+    
+    // Scroll to tools
+    document.querySelector('.tools-section').scrollIntoView({ behavior: 'smooth' });
+}
