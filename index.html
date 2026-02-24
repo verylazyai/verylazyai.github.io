@@ -10,15 +10,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-G24P6MXJJ8"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'G-G24P6MXJJ8');
-</script>
 <body>
     <!-- Hero Section -->
     <header class="hero">
@@ -49,6 +40,11 @@
             <div class="hero-tabs">
                 <button class="hero-tab active" data-tab="browse">Browse Tools</button>
                 <button class="hero-tab" data-tab="search">AI Search</button>
+                <button class="hero-tab" data-tab="compare">
+                    <span class="compare-icon">⚖️</span>
+                    Compare Tools
+                    <span class="compare-count" id="compareCount" style="display: none;">0</span>
+                </button>
             </div>
 
             <div class="search-container" id="aiSearchContainer" style="display: none;">
@@ -65,6 +61,16 @@
             </div>
 
             <div id="aiSearchResults" class="ai-search-results"></div>
+
+            <!-- Comparison Panel -->
+            <div id="comparisonPanel" class="comparison-panel" style="display: none;">
+                <div class="comparison-header">
+                    <h3>🔍 Compare AI Tools Side-by-Side</h3>
+                    <p>Select 2-3 tools to compare their features, pricing, and capabilities</p>
+                </div>
+                <div id="selectedToolsForCompare" class="selected-tools-compare"></div>
+                <div id="comparisonTable" class="comparison-table-container"></div>
+            </div>
         </div>
     </header>
 
@@ -114,7 +120,23 @@
             </div>
         </div>
     </section>
-    
+
+    <!-- Featured Video Section -->
+    <section class="featured-video">
+        <div class="container">
+            <h2>Why VeryLazyAI?</h2>
+            <div class="video-wrapper">
+                <div class="video-placeholder">
+                    <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                        <circle cx="40" cy="40" r="40" fill="rgba(102, 126, 234, 0.1)"/>
+                        <path d="M32 26L56 40L32 54V26Z" fill="#667eea"/>
+                    </svg>
+                    <p>Watch how we're making AI accessible for everyone</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
@@ -135,7 +157,6 @@
                     </div>
                     <p>Making AI simple, accessible, and free.</p>
                 </div>
-                
             </div>
             
             <div class="footer-bottom">
