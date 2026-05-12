@@ -58,3 +58,4 @@ Issues with deployment? Check:
 - [ ] Dark mode toggle
 - [ ] Newsletter signup
 - [ ] Tool submission form
+- [Nick Launches](https://nicklaunches.com/) - Launch platform for builders, AI startups, and SaaS founders to get discovered and earn a permanent dofollow backlink.
