@@ -865,6 +865,13 @@ const aiTools = [
         fullDescription: "You.com provides AI search with customizable sources.",
         features: ["AI search", "Custom sources", "Productivity apps", "Code search", "Privacy-focused"],
         url: "https://you.com", videoUrl: "", badge: "Free"
+    },
+    {
+        id: 121, name: "LandscapioAI", category: "image", icon: "🌿",
+        description: "AI landscape design ideas from yard photos with estimates.",
+        fullDescription: "LandscapioAI helps homeowners upload a yard photo, explore AI landscape redesign ideas, and estimate project costs before hiring or DIY planning.",
+        features: ["Photo-to-design ideas", "Outdoor redesign planning", "Cost estimates", "Free daily use", "Landscape inspiration"],
+        url: "https://www.landscapioai.com/", videoUrl: "", badge: "Free"
     }
 ];
 
