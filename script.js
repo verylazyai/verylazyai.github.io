@@ -220,6 +220,13 @@ const aiTools = [
         url: "https://artbreeder.com", videoUrl: "", badge: "Free"
     },
     {
+        id: 121, name: "Aurcue", category: "image", icon: "🎨",
+        description: "AI personal style assistant for color analysis, outfits, hairstyles, and glasses.",
+        fullDescription: "Aurcue turns one user photo into practical personal color, outfit, hairstyle, glasses, and seasonal styling guidance.",
+        features: ["Color analysis", "Outfit ideas", "Hairstyle guidance", "Glasses suggestions", "Photo-based reports"],
+        url: "https://www.aurcue.com", videoUrl: "", badge: "Free"
+    },
+    {
         id: 31, name: "Remove.bg", category: "image", icon: "🔲",
         description: "Instantly remove backgrounds with AI precision.",
         fullDescription: "Remove.bg automatically removes backgrounds in seconds.",
