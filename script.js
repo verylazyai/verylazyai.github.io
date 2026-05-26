@@ -147,6 +147,13 @@ const aiTools = [
 
     // IMAGE TOOLS (18 tools)
     {
+        id: 121, name: "LandscapioAI", category: "image", icon: "🏡",
+        description: "AI landscape design and outdoor visualization platform for gardens, yards, and exterior spaces.",
+        fullDescription: "LandscapioAI helps homeowners, landscapers, and design teams generate landscape design concepts and visualize outdoor transformations with AI.",
+        features: ["Landscape design", "Outdoor visualization", "Garden ideas", "Exterior concepts", "AI design planning"],
+        url: "https://www.landscapioai.com/", videoUrl: "", badge: "Free"
+    },
+    {
         id: 21, name: "Midjourney", category: "image", icon: "🌌",
         description: "AI art generator known for stunning artistic image creation.",
         fullDescription: "Midjourney creates incredibly artistic and detailed images via Discord.",
