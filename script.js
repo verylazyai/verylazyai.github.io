@@ -1,4 +1,4 @@
-// AI Tools Database - Comprehensive Collection (120 tools)
+// AI Tools Database - Comprehensive Collection (121 tools)
 const aiTools = [
     // WRITING TOOLS (20 tools) - with rankings
     {
@@ -745,7 +745,7 @@ const aiTools = [
         url: "https://spoke.ai", videoUrl: "", badge: "Free"
     },
 
-    // RESEARCH TOOLS (17 tools)
+    // RESEARCH TOOLS (18 tools)
     {
         id: 104, name: "Perplexity AI", category: "research", icon: "🔍",
         description: "AI-powered search engine with sourced answers and citations.",
@@ -865,6 +865,13 @@ const aiTools = [
         fullDescription: "You.com provides AI search with customizable sources.",
         features: ["AI search", "Custom sources", "Productivity apps", "Code search", "Privacy-focused"],
         url: "https://you.com", videoUrl: "", badge: "Free"
+    },
+    {
+        id: 121, name: "FPVTune", category: "research", icon: "📊",
+        description: "AI-assisted Betaflight blackbox log analysis for FPV drone tuning.",
+        fullDescription: "FPVTune analyzes FPV drone blackbox logs and suggests practical PID and filter tuning changes for Betaflight setups.",
+        features: ["Blackbox log analysis", "PID tuning suggestions", "Filter recommendations", "FPV drone diagnostics", "Open-source project"],
+        url: "https://fpvtune.com/", videoUrl: "", badge: "Free"
     }
 ];
 
