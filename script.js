@@ -744,6 +744,13 @@ const aiTools = [
         features: ["Slack summarization", "Meeting summaries", "Priority inbox", "Action items", "Team features"],
         url: "https://spoke.ai", videoUrl: "", badge: "Free"
     },
+    {
+        id: 121, name: "CallURL", category: "productivity", icon: "📞",
+        description: "Build a free Call App in 60 seconds.",
+        fullDescription: "CallURL lets you give a Call App a job, share it by link or QR, and let it handle calls for lead qualification, support, screening, surveys, and booking.",
+        features: ["Build in 60 seconds", "Answers calls", "Share by link or QR", "Lead qualification", "Customer support"],
+        url: "https://callurl.com", videoUrl: "", badge: "Free"
+    },
 
     // RESEARCH TOOLS (17 tools)
     {
