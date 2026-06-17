@@ -1,4 +1,4 @@
-// AI Tools Database - Comprehensive Collection (120 tools)
+// AI Tools Database - Comprehensive Collection (121 tools)
 const aiTools = [
     // WRITING TOOLS (20 tools) - with rankings
     {
@@ -385,7 +385,7 @@ const aiTools = [
         url: "https://peech-ai.com", videoUrl: "", badge: "Trial"
     },
 
-    // CODE TOOLS (17 tools) - Ranks 1-3
+    // CODE TOOLS (18 tools) - Ranks 1-3
     {
         id: 54, name: "GitHub Copilot", category: "code", icon: "💻",
         description: "AI pair programmer with real-time code suggestions.",
@@ -506,6 +506,13 @@ const aiTools = [
         fullDescription: "Fig adds visual autocomplete to your terminal.",
         features: ["Terminal autocomplete", "Script building", "Team collaboration", "Plugin system", "Multi-shell"],
         url: "https://fig.io", videoUrl: "", badge: "Free"
+    },
+    {
+        id: 121, name: "Roblox GUI Maker", category: "code", icon: "🎮",
+        description: "Free AI Roblox Studio GUI generator with Lua starter code.",
+        fullDescription: "Roblox GUI Maker drafts game menus, HUDs, shop panels, inventory screens, and other Roblox Studio GUI layouts from prompts, then provides Roblox-style previews and Lua starter code.",
+        features: ["Roblox Studio GUI drafts", "Lua starter code", "Game menu layouts", "HUD and inventory UI", "Browser-based"],
+        url: "https://robloxguimaker.dev/", videoUrl: "", badge: "Free"
     },
 
     // AUDIO TOOLS (15 tools) - Continuing...
