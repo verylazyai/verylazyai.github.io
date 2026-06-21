@@ -1,4 +1,4 @@
-// AI Tools Database - Comprehensive Collection (120 tools)
+// AI Tools Database - Comprehensive Collection (121 tools)
 const aiTools = [
     // WRITING TOOLS (20 tools) - with rankings
     {
@@ -145,7 +145,7 @@ const aiTools = [
         url: "https://articleforge.com", videoUrl: "", badge: "Trial"
     },
 
-    // IMAGE TOOLS (18 tools)
+    // IMAGE TOOLS (19 tools)
     {
         id: 21, name: "Midjourney", category: "image", icon: "🌌",
         description: "AI art generator known for stunning artistic image creation.",
@@ -225,6 +225,13 @@ const aiTools = [
         fullDescription: "Remove.bg automatically removes backgrounds in seconds.",
         features: ["Auto removal", "Edge detection", "Bulk processing", "API", "HD downloads"],
         url: "https://remove.bg", videoUrl: "", badge: "Free"
+    },
+    {
+        id: 121, name: "ClearCrowds", category: "image", icon: "🧹",
+        description: "AI photo cleanup tool for removing crowds, objects, text, clutter, and other distractions.",
+        fullDescription: "ClearCrowds helps clean up photos by removing unwanted people, objects, text, clutter, and visual distractions while keeping the image natural.",
+        features: ["Object removal", "Text cleanup", "Crowd removal", "Photo repair workflow", "Mobile-friendly"],
+        url: "https://www.clearcrowds.com", videoUrl: "", badge: "Free"
     },
     {
         id: 32, name: "Clipdrop", category: "image", icon: "✂️",
