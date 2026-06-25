@@ -647,6 +647,13 @@ const aiTools = [
         url: "https://mem.ai", videoUrl: "", badge: "Free"
     },
     {
+        id: 121, name: "Remio", category: "productivity", icon: "🧠",
+        description: "Local-first AI memory and personal knowledge base.",
+        fullDescription: "Remio parses files, webpages, recordings, emails, messages, images, and notes into local indexes and vectors for focused personal context retrieval.",
+        features: ["Local-first memory", "File and webpage parsing", "Audio transcription", "Email and message context", "Vector search"],
+        url: "https://remio.ai", videoUrl: "", badge: "Freemium"
+    },
+    {
         id: 90, name: "Reclaim AI", category: "productivity", icon: "📅",
         description: "AI scheduling assistant that defends your time.",
         fullDescription: "Reclaim auto-schedules tasks and meetings.",
