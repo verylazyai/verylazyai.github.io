@@ -384,6 +384,13 @@ const aiTools = [
         features: ["Auto-editing", "Brand management", "Team collaboration", "Content library", "Transcription"],
         url: "https://peech-ai.com", videoUrl: "", badge: "Trial"
     },
+    {
+        id: 121, name: "ImagineClip", category: "video", icon: "🎬",
+        description: "AI video generator for avatar clips, stylized scenes, and social-ready videos.",
+        fullDescription: "ImagineClip helps creators generate short AI videos from prompts, images, and effects.",
+        features: ["Avatar clips", "Prompt-to-video", "Image-to-video", "Stylized scenes", "Social-ready exports"],
+        url: "https://imagineclip.com", videoUrl: "", badge: "Free"
+    },
 
     // CODE TOOLS (17 tools) - Ranks 1-3
     {
