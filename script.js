@@ -744,6 +744,13 @@ const aiTools = [
         features: ["Slack summarization", "Meeting summaries", "Priority inbox", "Action items", "Team features"],
         url: "https://spoke.ai", videoUrl: "", badge: "Free"
     },
+    {
+        id: 121, name: "Tudo", category: "productivity", icon: "✅",
+        description: "AI task manager for voice, screenshots, and goals.",
+        fullDescription: "Tudo turns voice notes, screenshots, shared content, and goals into organized tasks on iPhone.",
+        features: ["Voice capture", "Screenshot tasks", "Goal planning", "Personal task organization", "iPhone app"],
+        url: "https://blynkai.app/tudo/", videoUrl: "", badge: "Free"
+    },
 
     // RESEARCH TOOLS (17 tools)
     {
