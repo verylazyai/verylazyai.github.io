@@ -1,4 +1,4 @@
-// AI Tools Database - Comprehensive Collection (120 tools)
+// AI Tools Database - Comprehensive Collection (121 tools)
 const aiTools = [
     // WRITING TOOLS (20 tools) - with rankings
     {
@@ -745,7 +745,7 @@ const aiTools = [
         url: "https://spoke.ai", videoUrl: "", badge: "Free"
     },
 
-    // RESEARCH TOOLS (17 tools)
+    // RESEARCH TOOLS (18 tools)
     {
         id: 104, name: "Perplexity AI", category: "research", icon: "🔍",
         description: "AI-powered search engine with sourced answers and citations.",
@@ -865,6 +865,13 @@ const aiTools = [
         fullDescription: "You.com provides AI search with customizable sources.",
         features: ["AI search", "Custom sources", "Productivity apps", "Code search", "Privacy-focused"],
         url: "https://you.com", videoUrl: "", badge: "Free"
+    },
+    {
+        id: 121, name: "Reverse Image Location", category: "research", icon: "🌍",
+        description: "AI photo geolocation tool for OSINT and GeoGuessr-style image location analysis.",
+        fullDescription: "Reverse Image Location helps analyze visible scene clues in a photo, such as signs, roads, vegetation, architecture, terrain, shadows, and map context.",
+        features: ["Photo geolocation", "Scene clue analysis", "OSINT workflows", "GeoGuessr practice", "Map verification"],
+        url: "https://reverseimagelocation.com/", videoUrl: "", badge: "Free"
     }
 ];
 
