@@ -865,6 +865,34 @@ const aiTools = [
         fullDescription: "You.com provides AI search with customizable sources.",
         features: ["AI search", "Custom sources", "Productivity apps", "Code search", "Privacy-focused"],
         url: "https://you.com", videoUrl: "", badge: "Free"
+    },
+    {
+        id: 121, name: "Blur Background", category: "image", icon: "🫧",
+        description: "Remove or blur image backgrounds online with AI.",
+        fullDescription: "Blur Background is a browser-based tool for removing and blurring image backgrounds without installing desktop software.",
+        features: ["Background removal", "Background blur", "Browser-based workflow", "Privacy-friendly editing", "No desktop install"],
+        url: "https://blurbackground.vip", videoUrl: "", badge: "Free"
+    },
+    {
+        id: 122, name: "Image Describer", category: "image", icon: "🖼️",
+        description: "Generate image descriptions, prompts, and alt text with AI.",
+        fullDescription: "Image Describer analyzes uploaded images and produces natural-language descriptions, creative prompts, and accessibility-focused alt text.",
+        features: ["Image descriptions", "Alt text generation", "Creative prompts", "Browser-based workflow", "Accessibility support"],
+        url: "https://imagedescriber.dev", videoUrl: "", badge: "Free"
+    },
+    {
+        id: 123, name: "Video Upscaler", category: "video", icon: "🎞️",
+        description: "Enhance blurry footage and upscale video to HD or 4K.",
+        fullDescription: "Video Upscaler is a browser-based AI video enhancer for creators and restoration workflows.",
+        features: ["AI enhancement", "HD upscaling", "4K upscaling", "Blur reduction", "Browser-based workflow"],
+        url: "https://videoupscaler.video", videoUrl: "", badge: "Free"
+    },
+    {
+        id: 124, name: "Vedic Astrology Chart", category: "research", icon: "🪐",
+        description: "Generate sidereal birth charts with AI-assisted interpretation.",
+        fullDescription: "Vedic Astrology Chart generates sidereal birth charts with houses, nakshatras, D9/Navamsa, dashas, divisional charts, and AI-assisted interpretation.",
+        features: ["Sidereal birth chart", "Nakshatras and houses", "D9 Navamsa", "Dashas", "AI interpretation"],
+        url: "https://vedicastrologychart.net", videoUrl: "", badge: "Free"
     }
 ];
 
