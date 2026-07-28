@@ -145,7 +145,7 @@ const aiTools = [
         url: "https://articleforge.com", videoUrl: "", badge: "Trial"
     },
 
-    // IMAGE TOOLS (18 tools)
+    // IMAGE TOOLS (19 tools)
     {
         id: 21, name: "Midjourney", category: "image", icon: "🌌",
         description: "AI art generator known for stunning artistic image creation.",
@@ -274,6 +274,13 @@ const aiTools = [
         fullDescription: "Pixlr combines traditional editing with AI features.",
         features: ["AI cutout", "Background removal", "Enhancement", "Full editor", "Browser-based"],
         url: "https://pixlr.com/ai", videoUrl: "", badge: "Free"
+    },
+    {
+        id: 121, name: "ImageChanger", category: "image", icon: "🪄",
+        description: "Browser-based AI photo editor with 38 focused transformation workflows.",
+        fullDescription: "ImageChanger provides focused AI workflows for background changes, portraits, object editing, restoration, and creative photo transformations.",
+        features: ["Background changes", "Portrait editing", "Object editing", "Photo restoration", "Creative transformations"],
+        url: "https://aiimagechanger.app/", videoUrl: "", badge: "Free"
     },
 
     // VIDEO TOOLS (15 tools) - Continuing with remaining categories...
