@@ -865,6 +865,13 @@ const aiTools = [
         fullDescription: "You.com provides AI search with customizable sources.",
         features: ["AI search", "Custom sources", "Productivity apps", "Code search", "Privacy-focused"],
         url: "https://you.com", videoUrl: "", badge: "Free"
+    },
+    {
+        id: 121, name: "SaaSCity", category: "productivity", icon: "🏙️",
+        description: "Gamified SaaS directory where every listing becomes a building on a live city map.",
+        fullDescription: "SaaSCity is a SaaS and AI product directory. Every approved listing becomes a building on a live isometric city map, with an indexed product page and weekly launch cycles.",
+        features: ["Live city map", "Manual review in 24h", "Weekly launches", "Dofollow backlink", "Free listing"],
+        url: "https://saascity.io", videoUrl: "", badge: "Free"
     }
 ];
 
