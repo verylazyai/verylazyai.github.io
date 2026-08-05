@@ -865,6 +865,13 @@ const aiTools = [
         fullDescription: "You.com provides AI search with customizable sources.",
         features: ["AI search", "Custom sources", "Productivity apps", "Code search", "Privacy-focused"],
         url: "https://you.com", videoUrl: "", badge: "Free"
+    },
+    {
+        id: 121, name: "Fortuneteller.Today", category: "productivity", icon: "🔮",
+        description: "AI tarot, astrology, numerology, BaZi, and rune readings for practical reflection.",
+        fullDescription: "Fortuneteller.Today is an AI-powered divination and self-reflection platform for tarot, astrology, BaZi, Zi Wei Dou Shu, numerology, runes, and related wisdom traditions.",
+        features: ["Tarot readings", "Astrology insights", "Numerology", "BaZi and Zi Wei Dou Shu", "Rune readings"],
+        url: "https://www.fortuneteller.today", videoUrl: "", badge: "Free"
     }
 ];
 
