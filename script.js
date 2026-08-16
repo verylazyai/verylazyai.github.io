@@ -1,4 +1,4 @@
-// AI Tools Database - Comprehensive Collection (120 tools)
+// AI Tools Database - Comprehensive Collection (121 tools)
 const aiTools = [
     // WRITING TOOLS (20 tools) - with rankings
     {
@@ -506,6 +506,13 @@ const aiTools = [
         fullDescription: "Fig adds visual autocomplete to your terminal.",
         features: ["Terminal autocomplete", "Script building", "Team collaboration", "Plugin system", "Multi-shell"],
         url: "https://fig.io", videoUrl: "", badge: "Free"
+    },
+    {
+        id: 121, name: "Agent QA", category: "code", icon: "🧪",
+        description: "Natural-language web and mobile regression testing with persistent test memory.",
+        fullDescription: "Agent QA provides CLI, dashboard, MCP, and Agent Skills workflows for authoring, running, and triaging application tests.",
+        features: ["Natural-language tests", "Web and mobile", "Persistent test memory", "MCP server", "Run evidence"],
+        url: "https://github.com/vostride/agent-qa", videoUrl: "", badge: "Provider costs"
     },
 
     // AUDIO TOOLS (15 tools) - Continuing...
