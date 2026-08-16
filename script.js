@@ -1,4 +1,4 @@
-// AI Tools Database - Comprehensive Collection (120 tools)
+// AI Tools Database - Comprehensive Collection (121 tools)
 const aiTools = [
     // WRITING TOOLS (20 tools) - with rankings
     {
@@ -865,6 +865,13 @@ const aiTools = [
         fullDescription: "You.com provides AI search with customizable sources.",
         features: ["AI search", "Custom sources", "Productivity apps", "Code search", "Privacy-focused"],
         url: "https://you.com", videoUrl: "", badge: "Free"
+    },
+    {
+        id: 121, name: "IdeaHunter", category: "research", icon: "🔎",
+        description: "AI startup idea research tool for finding demand-backed app and micro-SaaS opportunities.",
+        fullDescription: "IdeaHunter helps solo founders validate app ideas with public signals, buyer pain, market evidence, MVP scope, and monetization paths.",
+        features: ["Startup idea research", "Demand signal analysis", "Buyer pain discovery", "MVP scoping", "Monetization paths"],
+        url: "https://ideahunter.today", videoUrl: "", badge: "Free"
     }
 ];
 
@@ -876,7 +883,7 @@ const categoryKeywords = {
     code: ['code', 'programming', 'develop', 'software', 'debug', 'IDE', 'function', 'script', 'developer'],
     audio: ['audio', 'voice', 'sound', 'music', 'song', 'speech', 'voice clone', 'narration', 'podcast', 'TTS', 'text to speech'],
     productivity: ['productivity', 'organize', 'schedule', 'meeting', 'task', 'calendar', 'email', 'note', 'workflow', 'automate'],
-    research: ['research', 'search', 'find', 'paper', 'study', 'academic', 'scientific', 'analyze', 'data', 'information']
+    research: ['research', 'search', 'find', 'paper', 'study', 'academic', 'scientific', 'analyze', 'data', 'information', 'startup', 'idea', 'market', 'validation']
 };
 
 // State
