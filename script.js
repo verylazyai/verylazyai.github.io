@@ -1,4 +1,4 @@
-// AI Tools Database - Comprehensive Collection (120 tools)
+// AI Tools Database - Comprehensive Collection (121 tools)
 const aiTools = [
     // WRITING TOOLS (20 tools) - with rankings
     {
@@ -617,7 +617,7 @@ const aiTools = [
         url: "https://krisp.ai", videoUrl: "", badge: "Free"
     },
 
-    // PRODUCTIVITY TOOLS (18 tools)
+    // PRODUCTIVITY TOOLS (19 tools)
     {
         id: 86, name: "Notion AI", category: "productivity", icon: "📓",
         description: "AI writing assistant integrated into Notion workspace.",
@@ -743,6 +743,13 @@ const aiTools = [
         fullDescription: "Spoke summarizes Slack discussions and meeting recordings.",
         features: ["Slack summarization", "Meeting summaries", "Priority inbox", "Action items", "Team features"],
         url: "https://spoke.ai", videoUrl: "", badge: "Free"
+    },
+    {
+        id: 121, name: "SocialEcho", category: "productivity", icon: "📣",
+        description: "AI-assisted workspace for managing social media across multiple networks.",
+        fullDescription: "SocialEcho combines publishing, engagement, listening, and analytics for social media teams.",
+        features: ["Cross-network publishing", "Unified inbox", "Social listening", "Analytics", "AI content assistance"],
+        url: "https://www.socialecho.net/", videoUrl: "", badge: "Free"
     },
 
     // RESEARCH TOOLS (17 tools)
