@@ -1,4 +1,4 @@
-// AI Tools Database - Comprehensive Collection (120 tools)
+// AI Tools Database - Comprehensive Collection (121 tools)
 const aiTools = [
     // WRITING TOOLS (20 tools) - with rankings
     {
@@ -745,7 +745,7 @@ const aiTools = [
         url: "https://spoke.ai", videoUrl: "", badge: "Free"
     },
 
-    // RESEARCH TOOLS (17 tools)
+    // RESEARCH TOOLS (18 tools)
     {
         id: 104, name: "Perplexity AI", category: "research", icon: "🔍",
         description: "AI-powered search engine with sourced answers and citations.",
@@ -753,6 +753,13 @@ const aiTools = [
         features: ["AI-powered search", "Source citations", "Follow-up questions", "Multiple sources", "Real-time info"],
         url: "https://perplexity.ai", videoUrl: "https://www.youtube.com/embed/gT2N68P0zuQ",
         badge: "Free", rank: 1
+    },
+    {
+        id: 121, name: "AI Tools Radar", category: "research", icon: "📡",
+        description: "AI tools directory and daily AI industry news platform.",
+        fullDescription: "AI Tools Radar helps users discover, compare, and track AI products, with daily AI industry news and newsletter issues.",
+        features: ["AI tool discovery", "Product comparison", "Daily AI news", "Newsletter issues", "Industry tracking"],
+        url: "https://aitoolsradar.com", videoUrl: "", badge: "Free"
     },
     {
         id: 105, name: "Consensus", category: "research", icon: "📚",
