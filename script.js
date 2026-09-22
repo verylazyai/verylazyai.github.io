@@ -384,6 +384,13 @@ const aiTools = [
         features: ["Auto-editing", "Brand management", "Team collaboration", "Content library", "Transcription"],
         url: "https://peech-ai.com", videoUrl: "", badge: "Trial"
     },
+    {
+        id: 121, name: "Magic Hour", category: "video", icon: "✨",
+        description: "AI video creation platform for creators and teams.",
+        fullDescription: "Magic Hour creates videos from text and images, with face swap, lip sync, animation, and API workflows.",
+        features: ["Text-to-video", "Image-to-video", "Face swap", "Lip sync", "API"],
+        url: "https://magichour.ai", videoUrl: "", badge: "Free"
+    },
 
     // CODE TOOLS (17 tools) - Ranks 1-3
     {
