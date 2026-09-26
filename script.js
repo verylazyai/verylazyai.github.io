@@ -865,6 +865,13 @@ const aiTools = [
         fullDescription: "You.com provides AI search with customizable sources.",
         features: ["AI search", "Custom sources", "Productivity apps", "Code search", "Privacy-focused"],
         url: "https://you.com", videoUrl: "", badge: "Free"
+    },
+    {
+        id: 121, name: "AI Fruit Video", category: "video", icon: "🍓",
+        description: "AI video generator for funny talking-fruit clips from story ideas.",
+        fullDescription: "AI Fruit Video turns a prepared fruit-story idea into a short single-scene video with ready-made fruit characters. Preview and download shareable clips for TikTok, Reels, and Shorts.",
+        features: ["Story-to-video", "Fruit characters", "Preview & download", "Freemium"],
+        url: "https://aifruitvideo.com", videoUrl: "", badge: "Free"
     }
 ];
 
