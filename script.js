@@ -865,6 +865,13 @@ const aiTools = [
         fullDescription: "You.com provides AI search with customizable sources.",
         features: ["AI search", "Custom sources", "Productivity apps", "Code search", "Privacy-focused"],
         url: "https://you.com", videoUrl: "", badge: "Free"
+    },
+    {
+        id: 122, name: "PhotoGenerAI", category: "image", icon: "📸",
+        description: "Free AI photo generator and editor with no sign-up required.",
+        fullDescription: "PhotoGenerAI creates and edits photos with AI — text-to-image, image-to-image, enhancement and style tools, free to try in the browser.",
+        features: ["Text-to-image", "AI photo editing", "No sign-up", "Freemium"],
+        url: "https://photogenerai.com", videoUrl: "", badge: "Free"
     }
 ];
 
