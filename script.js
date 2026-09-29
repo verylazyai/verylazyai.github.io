@@ -865,6 +865,13 @@ const aiTools = [
         fullDescription: "You.com provides AI search with customizable sources.",
         features: ["AI search", "Custom sources", "Productivity apps", "Code search", "Privacy-focused"],
         url: "https://you.com", videoUrl: "", badge: "Free"
+    },
+    {
+        id: 121, name: "RemoveMate", category: "image", icon: "✂️",
+        description: "AI background removal and image cleanup tools in one place.",
+        fullDescription: "RemoveMate removes backgrounds and cleans up product, portrait and pet photos with free daily credits and no sign-up required.",
+        features: ["Background removal", "Object & text removal", "Watermark remover", "Image unblur", "Free daily credits"],
+        url: "https://removemate.com", videoUrl: "", badge: "Free"
     }
 ];
 
