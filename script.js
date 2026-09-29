@@ -865,6 +865,13 @@ const aiTools = [
         fullDescription: "You.com provides AI search with customizable sources.",
         features: ["AI search", "Custom sources", "Productivity apps", "Code search", "Privacy-focused"],
         url: "https://you.com", videoUrl: "", badge: "Free"
+    },
+    {
+        id: 121, name: "AI Room Makeover", category: "image", icon: "🛋️",
+        description: "Preview a room change in your own photo before you make it.",
+        fullDescription: "AI Room Makeover generates a makeover of your real room photo. Describe the change, optionally add a product or material reference, and the original space, viewpoint, and unmentioned objects stay intact.",
+        features: ["Room photo makeover", "Product reference support", "Preserves original space", "Freemium"],
+        url: "https://airoommakeover.com", videoUrl: "", badge: "Free"
     }
 ];
 
