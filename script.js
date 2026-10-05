@@ -865,6 +865,23 @@ const aiTools = [
         fullDescription: "You.com provides AI search with customizable sources.",
         features: ["AI search", "Custom sources", "Productivity apps", "Code search", "Privacy-focused"],
         url: "https://you.com", videoUrl: "", badge: "Free"
+    },
+    {
+            "id": 121,
+            "name": "Orkas",
+            "category": "productivity",
+            "icon": "O",
+            "description": "An open-source, local-first desktop AI workforce coordinated by a Commander through one chat.",
+            "fullDescription": "Orkas is an open-source, local-first desktop AI workforce. A Commander turns goals into executable plans and coordinates specialist agents in parallel or sequence through one chat. It supports research, coding, data analysis and documents in a local desktop workspace. Packaged installers are available for macOS and Windows; Linux can be run from source. The core app is free; model usage and optional services may cost extra.",
+            "features": [
+                    "Open-source core",
+                    "Local-first desktop workspace",
+                    "Commander-led agent coordination",
+                    "Research, coding, data analysis and documents"
+            ],
+            "url": "https://orkas.ai/?source=dir_verylazy",
+            "videoUrl": "",
+            "badge": "Free core"
     }
 ];
 
